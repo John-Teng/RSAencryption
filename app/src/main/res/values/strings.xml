@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">RSAencryption</string>
     <string name="decrypt">Decrypt</string>
+    <string name="title_activity_rsadecryption">RSAdecryption</string>
 </resources>
