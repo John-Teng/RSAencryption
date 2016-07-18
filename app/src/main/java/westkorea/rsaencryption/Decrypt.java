@@ -71,9 +71,14 @@ public class Decrypt {
                 generateD();
     }
 
+public void getInfo () {
+    d = new BigInteger(fieldD.getText().toString());
+    n = new BigInteger(fieldN.getText().toString());
+    c = new BigInteger(fieldC.getText().toString());
 
+}
     public void decryptCipher () {
-        c = new BigInteger(fieldC.getText().toString());
+        getInfo();
         asciiM = c.modPow(d,n);
         String s = asciiM.toString();
         //String s = fieldC.getText().toString();
